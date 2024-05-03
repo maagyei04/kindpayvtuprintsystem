@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kindpayvtuprintsystem/static/css/main.5c933bf2.css",
-    "main.js": "/kindpayvtuprintsystem/static/js/main.676b8771.js",
+    "main.css": "/kindpayvtuprintsystem/static/css/main.545417b6.css",
+    "main.js": "/kindpayvtuprintsystem/static/js/main.a6b47f56.js",
     "static/js/453.b61cc0a8.chunk.js": "/kindpayvtuprintsystem/static/js/453.b61cc0a8.chunk.js",
     "index.html": "/kindpayvtuprintsystem/index.html",
-    "main.5c933bf2.css.map": "/kindpayvtuprintsystem/static/css/main.5c933bf2.css.map",
-    "main.676b8771.js.map": "/kindpayvtuprintsystem/static/js/main.676b8771.js.map",
+    "main.545417b6.css.map": "/kindpayvtuprintsystem/static/css/main.545417b6.css.map",
+    "main.a6b47f56.js.map": "/kindpayvtuprintsystem/static/js/main.a6b47f56.js.map",
     "453.b61cc0a8.chunk.js.map": "/kindpayvtuprintsystem/static/js/453.b61cc0a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c933bf2.css",
-    "static/js/main.676b8771.js"
+    "static/css/main.545417b6.css",
+    "static/js/main.a6b47f56.js"
   ]
 }
