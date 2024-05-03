@@ -76,6 +76,13 @@
   right: 0;
 }
 
+.serial-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 15px;
+}
+
 @media print {
   @page {
     margin: 0;

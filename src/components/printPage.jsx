@@ -56,17 +56,18 @@ const Excel = () => {
             const headerRow = jsonData[0];
             const pinIndex = headerRow.indexOf('digit');
             const amountIndex = headerRow.indexOf('amount');
-
+            const serialIndex = headerRow.indexOf('serialNumber');
 
             // Ensure 'pin' column exists
-            if (pinIndex === -1 || amountIndex === -1) {
-                setExcelError('Columns "pin" and "amount" not found in the Excel sheet.');
+            if (pinIndex === -1 || amountIndex === -1 || serialIndex === -1) {
+                setExcelError('Columns "serial", "pin" and "amount" not found in the Excel sheet.');
                 return;
             }
 
             const cardData = jsonData.slice(1).map((row) => ({
                 pin: row[pinIndex],
-                amount: row[amountIndex]
+                amount: row[amountIndex],
+                serial: row[serialIndex],
             }));
 
             // Calculate total pages
@@ -131,7 +132,8 @@ const Excel = () => {
                     <div className="card" key={index}>
                         <div className="image-container image-preview-container" style={{ position: 'relative' }}>
                             <img src={image} alt="Scratch Card" />
-                            <div className="image-text font-bold mr-1">{card.amount}</div>
+                            <div className="image-text font-bold text-[12px] mr-[1px] mt-o">{card.amount}</div>
+                            <div className="serial-text font-semibold text-[6px] mr-1">{card.serial}</div>
                         </div>
                         <div className="pin">
                             <p className='font-semibold text-sm'>*920*200*{card.pin}#</p>
